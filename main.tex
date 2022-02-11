@@ -1,0 +1,144 @@
+\documentclass[11pt, a4paper]{moderncv}
+\usepackage{tikz}
+\usepackage[utf8]{inputenc}
+  
+\author{damien.didier}
+\date{February 2022}
+
+%\usepackage{fontspec}
+\usepackage[inline]{enumitem}
+\usepackage[left=1.5cm,right=1.5cm,top=1.5cm,bottom=1.5cm]{geometry}
+\moderncvstyle{classic}
+\moderncvcolor{blue}
+
+\firstname{Damien}
+\familyname{\textsc{Didier}}
+
+\email{damien.didier@epita.fr}
+\phone[mobile]{+33 (0)7 70 42 61 54}
+%\phone[fixed]{}
+%\social[github]{}
+%\social[linkedin]{}
+
+\address{23 sentier de la Commune}{94800 \textsc{Villejuif}}{\textsc{France}}
+\photo[64pt]{damien.didier.jpg}
+
+
+\newcommand\topVsp{-40pt}%{0pt}
+\newcommand\secVsp{-5pt}%{0pt}
+\newcommand\secpostVsp{-5pt}%{0pt}
+
+\newcommand{\cvtag}[1]{%
+  \tikz[baseline]\node[anchor=base,draw=black,rounded corners,inner xsep=1ex,inner ysep=0.75ex,text height=1.5ex,text depth=.25ex]{#1};
+  \vspace{0.25ex}
+}
+
+\begin{document}
+
+\makecvtitle
+
+\vspace{\topVsp}
+\section{Formation} 
+\vspace{\secpostVsp}
+\cventry{Février 2019 - Aujourd'hui}{Ecole d'Ingénieur}{EPITA}{\textsc{Le kremlin-bicêtre}}{}{}
+\cventry{Septembre 2017 - Juin 2018}{Classe Préparatoire PTSI}{Lycée Jean-Baptiste Say}{\textsc{Paris}}{}{}
+\cventry{Juin 2017}{Diplôme du Baccalauréat général série S}{Lycée Saint Thomas de Villeneuve}{\textsc{Chaville}}{mention \emph{Très Bien}}{dont 20 en Informatique et Science du numérique (ISN)}
+
+
+\vspace{\secVsp}
+\section{Expériences professionnelles} % Résultats
+\vspace{\secpostVsp}
+\cventry{Octobre 2020 - Novembre 2020}{Stage ouvrier}{Total, Data Lab}{\textsc{Tour Coupole, la Défense}}{Aide à la labellisation de données dans le but d'entrainer des reseaux de neurones}{}
+
+\vspace{\secVsp}
+\section{Savoirs-faire}
+\vspace{\secpostVsp}
+%\subsection{Computing}
+%\cvitem{Langages de Programmation}{
+%    \begin{itemize*}
+%    \item À l'aise :
+%    \cvtag{C}
+%    \cvtag{Python}
+%    \item Mais aussi : \begin{itemize*}
+%    \item C\#
+%    \item Rust
+%    \item Caml
+%    \end{itemize*}            
+%    \end{itemize*}
+%    }
+%\cvitem{Modélisation}{
+%    \begin{itemize*}
+%    \item Blender
+%    \end{itemize*}
+%    }
+%\vspace{\secVsp}
+\cvitem{Langages de Programmation}{
+    À l'aise :
+    \cvtag{C}
+    \cvtag{Python}
+    \cvtag{PostgreSQL}
+    \cvtag{Java}
+    Mais aussi :
+    \cvtag{C\#}
+    \cvtag{Rust}
+    \cvtag{Caml}}
+\cvitem{Bureautique}{
+    \cvtag{Git}
+    \cvtag{LateX}
+    \cvtag{Linux}
+    \cvtag{Microsoft Office}}
+\cvitem{Création Numérique}{
+    \cvtag{Blender}
+    \cvtag{Gimp}}
+    
+\section{Langues}
+\vspace{\secpostVsp}
+\cvlanguage{Anglais}{Courant}{Niveau B2 certifié en 2015 \emph{(Cambridge English: First)}}
+\cvlanguage{Espagnol}{Basique}{}
+\vspace{\secVsp}
+
+
+\section{Extra}
+\subsection{Passions}{
+    \cvitem{Informatique}{
+    \begin{itemize*}
+    \item Rendu 3D en temps réel
+    \item Modélisation 3D
+    \item Jeux vidéos
+    \end{itemize*}
+    }
+    \cvitem{Travaux manuels}{
+    \begin{itemize*}
+    \item Origami
+    \item Modélisme
+    \item Sculpture
+    \item Dessin
+    \end{itemize*}
+    }
+
+}
+\subsection{Scoutisme (12 ans)}
+\cvitem{2018}{Chantier en Moldavie, association \emph{Vent d'Est} (pose de carrelage dans une future fabrique de confiture)}
+\cvitem{2017}{Chantier \emph{île de Cezon}, fort de type Vauban (déblayage d'une caserne du XIX siècle)}
+
+
+\subsection{Musique (10 ans)}
+\cvitem{Conservatoire}{
+    \begin{itemize*}
+    \item Trompette
+    \item Solfège
+    \end{itemize*}}
+
+\subsection{Projets}
+%\cvitem{Projet ISN}{Jeu d'exploration de donjon en tour par tour avec des éléments de jeu de rôle, Python}
+%\cvitem{OCR}{Implementation d'un reseau de neurone pour faire de la reconnaissance de caractère, C}
+%\cvitem{Malloc}{Implementation des fonctions d'allocation dynamique de mémoire du langage C, C}
+\cvitem{R.A.G.E.}{Application de visualisation d'objet 3D en temps réel en console, C}
+\cvitem{42sh}{shell POSIX, C}
+%\cvitem{Blender}{Modélisation d'une arme de \emph{Warhammer 40,000} (\emph{Bolter})}
+\subsection{Lectures}
+\cvlistitem{\emph{Real-time Rendering}, Tomas AKENINE-MÖLLER, \footnotesize{fourth edition}}
+\cvlistitem{\emph{The art of 3-D computer animation and imaging}, Isaac Victor KERLOW, \footnotesize{second edition}}
+\cvlistitem{\emph{Game Engine Architecture}, Jason GREGORY, \footnotesize{third edition}}
+
+\end{document}
