@@ -1,5 +1,6 @@
 \documentclass[11pt, a4paper]{moderncv}
 \usepackage{tikz}
+\usepackage{multicol}
 \usepackage[utf8]{inputenc}
   
 \author{damien.didier}
@@ -19,9 +20,9 @@
 %\phone[fixed]{}
 %\social[github]{}
 %\social[linkedin]{}
-
 \address{23 sentier de la Commune}{94800 \textsc{Villejuif}}{\textsc{France}}
 \photo[64pt]{damien.didier.jpg}
+\title{Elève ingénieur de 4\textsuperscript{ème} année à l'\emph{EPITA} pour un stage de 4 mois en Engine Programmer \newline\footnotesize{à partir de septembre 2022}}
 
 
 \newcommand\topVsp{-40pt}%{0pt}
@@ -52,6 +53,8 @@
 
 \vspace{\secVsp}
 \section{Savoirs-faire}
+\begin{multicols}{2}
+\setlength{\maincolumnwidth}{\linewidth-\leftskip-\rightskip-\hintscolumnwidth}
 \vspace{\secpostVsp}
 %\subsection{Computing}
 %\cvitem{Langages de Programmation}{
@@ -78,21 +81,28 @@
     \cvtag{Python}
     \cvtag{PostgreSQL}
     \cvtag{Java}
+    \newline
     Mais aussi :
     \cvtag{C\#}
     \cvtag{Rust}
     \cvtag{Caml}}
+    \cvitem{Environements}{
+    \cvtag{Linux}
+    \cvtag{Windows}}
 \cvitem{Bureautique}{
     \cvtag{Git}
     \cvtag{LateX}
-    \cvtag{Linux}
     \cvtag{Microsoft Office}}
 \cvitem{Création Numérique}{
     \cvtag{Blender}
     \cvtag{Gimp}}
     
+\end{multicols}
+
+    
 \section{Langues}
 \vspace{\secpostVsp}
+\cvlanguage{Français}{Langue maternelle}{}
 \cvlanguage{Anglais}{Courant}{Niveau B2 certifié en 2015 \emph{(Cambridge English: First)}}
 \cvlanguage{Espagnol}{Basique}{}
 \vspace{\secVsp}
@@ -115,7 +125,6 @@
     \item Dessin
     \end{itemize*}
     }
-
 }
 \subsection{Scoutisme (12 ans)}
 \cvitem{2018}{Chantier en Moldavie, association \emph{Vent d'Est} (pose de carrelage dans une future fabrique de confiture)}
